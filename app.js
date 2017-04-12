@@ -7,17 +7,17 @@ var port = 8080;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-io.on('connection', function(socket){
-    console.log('new connection made');
+// io.on('connection', function(socket){
+//     console.log('new connection made');
 
-    socket.emit('message-from-server', {
-        greeting: 'Hello from server'
-    });
+//     socket.emit('message-from-server', {
+//         greeting: 'Hello from server'
+//     });
 
-    socket.on('message-from-client', function(msg){
-        console.log(msg);
-    });
-});
+//     socket.on('message-from-client', function(msg){
+//         console.log(msg);
+//     });
+// });
 
 
 
